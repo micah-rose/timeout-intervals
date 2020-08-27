@@ -1,10 +1,18 @@
 import React, {useState} from 'react';
+
+//This import is done by using CSS Modules
 import classes from './Component.css'
 
 const Timeout = () => {
 
+    //Since this is a functional component, we need to use React hooks in order to manipulate the state.
+    //Below are examples of using useState to set our timeoutMessage and the function that will change the
+    //message after a 3 second delay.
     const [timeoutMessage, changeMessage]= useState("Start");
 
+    //Here is where setTimeout is called. I call the changeMessage function within the setTimeout so the
+    //page knows what action to perform after the 3 second delay (3000 ms). I then return clearTimeout 
+    //for some clean up.
     const changeHandler = () => {
         const change = setTimeout(() => {changeMessage("End")}, 3000);
         return () => clearTimeout(change);
