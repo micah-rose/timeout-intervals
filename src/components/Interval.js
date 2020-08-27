@@ -2,16 +2,8 @@ import React, {useState, useEffect} from 'react';
 import classes from './Component.css';
 
 const Interval = () => {
-
     const [count, startCountdown]= useState(3);
     const [isClicked, setClicked] = useState(false);
-
-    // const countdownHandler = () => {
-    //     const countdown = setInterval(() => startCountdown(count - 1), 1000);
-    //     if (count <= 0){
-    //         return () => clearInterval(countdown)
-    //     }
-    // }
 
     const clicked = () => {
         setClicked(true);
@@ -32,8 +24,8 @@ const Interval = () => {
     return (
         <div className={classes.Interval}>
         <h1>Interval</h1>
-        <p>To demonstrate how setInterval works, click the button below. You should expect
-            to see the number shown countdown from 3 to 0.</p>
+        <p>To demonstrate how setInterval works, click the button below. 
+            You should expect to see the number shown countdown from 3 to 0.</p>
 
         <button onClick={clicked}>Click me!</button>
         <p className={classes.Message}>{count}</p>
