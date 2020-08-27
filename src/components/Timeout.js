@@ -13,7 +13,7 @@ const Timeout = () => {
     return (
         <div className={classes.Timeout}>
             <h1>Timeout</h1>
-            <p>To demonstrate how setTimeout works,click the button below. 
+            <p>To demonstrate how setTimeout works, click the button below. 
                 You should expect to see the text change from "Start" to "End" after a 3 second delay.</p>
 
             <button onClick={changeHandler}>Click me!</button>
