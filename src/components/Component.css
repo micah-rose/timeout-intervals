@@ -1,0 +1,28 @@
+.Main {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.Timeout, .Interval {
+    display: inline-block;
+    border: 3px solid black;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 5px 7px darkgrey;
+}
+
+.Timeout button {
+    font-size: 20px;
+    background-color: salmon;
+    margin-top: 20px;;
+}
+
+.Message {
+    font-weight: bold;
+    font-size: 40px;
+}
